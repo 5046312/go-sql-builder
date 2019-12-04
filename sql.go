@@ -1,7 +1,5 @@
 package sql
 
-import "errors"
-
 type SqlBuilder interface {
 	Select(fields ...string) QueryBuilder
 	ForUpdate() QueryBuilder
